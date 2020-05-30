@@ -1,2 +1,12 @@
-enum Color {Red=0,Green=1,Blue=2};
-let backround = Color.Blue
+interface Point{
+    x:Number,
+    y:Number
+}
+
+let drawpoint = (Point)=>{
+    // ...
+}
+drawpoint({
+    x:2,
+    y:3
+});

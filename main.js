@@ -1,8 +1,7 @@
-var Color;
-(function (Color) {
-    Color[Color["Red"] = 0] = "Red";
-    Color[Color["Green"] = 1] = "Green";
-    Color[Color["Blue"] = 2] = "Blue";
-})(Color || (Color = {}));
-;
-var backround = Color.Blue;
+var drawpoint = function (Point) {
+    // ...
+};
+drawpoint({
+    x: 2,
+    y: 3
+});
