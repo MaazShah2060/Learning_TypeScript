@@ -1,7 +1,11 @@
-var drawpoint = function (Point) {
+var Point = /** @class */ (function () {
+    function Point() {
+    }
+    Point.prototype.anotherPoint = function (point) {
+        // ...
+    };
+    return Point;
+}());
+var drawpoint = function () {
     // ...
 };
-drawpoint({
-    x: 2,
-    y: 3
-});

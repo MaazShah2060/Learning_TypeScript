@@ -1,12 +1,11 @@
-interface Point{
-    x:Number,
+class Point {
+    x:Number
     y:Number
-}
 
-let drawpoint = (Point)=>{
+    anotherPoint(point){
+        // ...
+    }
+}
+let drawpoint=() =>{
     // ...
 }
-drawpoint({
-    x:2,
-    y:3
-});
