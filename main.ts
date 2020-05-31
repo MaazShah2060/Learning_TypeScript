@@ -1,11 +1,15 @@
 class Point {
-    x:Number
-    y:Number
+    x:Number;
+    y:Number;
 
-    anotherPoint(point){
+draw(){
+    console.log('X: '+this.x+',Y: '+this.y);
+}
+    anotherPoint(another: Point){
         // ...
     }
 }
-let drawpoint=() =>{
-    // ...
-}
+let point = new Point;
+point.x = 1;
+point.y = 3;
+point.draw();
