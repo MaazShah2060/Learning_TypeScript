@@ -1,18 +1,15 @@
 class Point {
-    private x:Number; //Adding access modifiers
-    private y:Number;
-    constructor(x?:Number,y?:Number){ //Added '?' for enabling optional values
-        this.x = x;
-        this.y = y;
+    constructor(private _x?:Number,private _y?:Number){ //Added '?' for enabling optional values
+        
     }
-getX(){
-    return this.x;
+get x(){
+    return this._x;
 }
-setX(value){
-    this.x=value;
+set x(value){
+    this._x=value;
 }
 draw(){
-    console.log('X: '+this.x+',Y: '+this.y);
+    console.log('X: '+this._x+',Y: '+this._y);
 }
     anotherPoint(another: Point){
         // ...
@@ -20,6 +17,6 @@ draw(){
 }
 let point = new Point(1,3);
 point.draw();
-var X = point.getX();
-point.setX(10);
+var X = point.x;
+point.x = 10;
 point.draw();

@@ -1,16 +1,20 @@
 var Point = /** @class */ (function () {
-    function Point(x, y) {
-        this.x = x;
-        this.y = y;
+    function Point(_x, _y) {
+        this._x = _x;
+        this._y = _y;
     }
-    Point.prototype.getX = function () {
-        return this.x;
-    };
-    Point.prototype.setX = function (value) {
-        this.x = value;
-    };
+    Object.defineProperty(Point.prototype, "x", {
+        get: function () {
+            return this._x;
+        },
+        set: function (value) {
+            this._x = value;
+        },
+        enumerable: false,
+        configurable: true
+    });
     Point.prototype.draw = function () {
-        console.log('X: ' + this.x + ',Y: ' + this.y);
+        console.log('X: ' + this._x + ',Y: ' + this._y);
     };
     Point.prototype.anotherPoint = function (another) {
         // ...
@@ -19,6 +23,6 @@ var Point = /** @class */ (function () {
 }());
 var point = new Point(1, 3);
 point.draw();
-var X = point.getX();
-point.setX(10);
+var X = point.x;
+point.x = 10;
 point.draw();
