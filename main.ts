@@ -5,7 +5,12 @@ class Point {
         this.x = x;
         this.y = y;
     }
-
+getX(){
+    return this.x;
+}
+setX(value){
+    this.x=value;
+}
 draw(){
     console.log('X: '+this.x+',Y: '+this.y);
 }
@@ -14,4 +19,7 @@ draw(){
     }
 }
 let point = new Point(1,3);
+point.draw();
+var X = point.getX();
+point.setX(10);
 point.draw();
